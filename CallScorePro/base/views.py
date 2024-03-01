@@ -56,6 +56,7 @@ def logoutUser(request):
 def homePage(request):
     return render(request, 'base/home.html')
 
+@login_required(login_url='login')
 def profilePage(request, username):
     user = User.objects.get(username=username)
     context = {'user': user}
