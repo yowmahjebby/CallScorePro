@@ -865,6 +865,7 @@ http://www.templatemo.com/tm-509-hydro
   }
 
   .modal-dialog form .form-control {
+    color: #ffffff;
     border-radius: 5px;
     border: 1px solid #595959;
     background: transparent;
@@ -875,6 +876,7 @@ http://www.templatemo.com/tm-509-hydro
 
   .modal-dialog form .form-control:hover,
   .modal-dialog form .form-control:focus {
+    color: #ffffff;
     border-color: #ffffff;
   }
 
