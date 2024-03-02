@@ -10,6 +10,22 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <!--   Core JS Files   -->
+        <script src="{% static 'js/core/popper.min.js' %}"></script>
+        <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/plugins/perfect-scrollbar.min.js' %}"></script>
+        <script src="{% static 'js/plugins/smooth-scrollbar.min.js' %}"></script>
+
+        <!-- Plugin for the charts, full documentation here: https://www.chartjs.org/ -->
+        <script src="{% static 'js/plugins/chartjs.min.js' %}"></script>
+        <script> src="{% static 'js/plugins/Chart.extension.js' %}"</script>
+
+        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="{% static 'js/soft-ui-dashboard.min.js' %}"></script>
+        
+        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+        <script src="{% static 'js/soft-ui-dashboard.min.js' %}?v=1.0.7"></script>
+        
         <!--     Fonts and icons     -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
         
@@ -40,24 +56,5 @@
         {% block content %}
 
         {% endblock %}        
-
-        <!--   Core JS Files   -->
-        <script src="{% static 'js/core/popper.min.js' %}"></script>
-        <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/plugins/perfect-scrollbar.min.js' %}"></script>
-        <script src="{% static 'js/plugins/smooth-scrollbar.min.js' %}"></script>
-
-        <!-- Plugin for the charts, full documentation here: https://www.chartjs.org/ -->
-        <script src="{% static 'js/plugins/chartjs.min.js' %}"></script>
-        <script src="{% static 'js/plugins/Chart.extension.js' %}"></script>
-
-        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="{% static 'js/soft-ui-dashboard.min.js' %}"></script>
-
-        <!-- Github buttons -->
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-        
-        <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-        <script src="{% static 'js/soft-ui-dashboard.min.js?v=1.0.7' %}"></script>
     </body>
 </html>
