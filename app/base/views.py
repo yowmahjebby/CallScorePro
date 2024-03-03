@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
+from .forms import RegisterUserForm
 
 # Create your views here.
 def index(request):
@@ -17,13 +18,8 @@ def index(request):
 
             user = authenticate(request, username=username, password=password)
 
-            if user is not None:
-                login(request, user)
-                return redirect('home')
-            else:
-                messages.error(request, 'Username or password is incorrect')
         elif request.POST.get('submit') == 'Register':
-            form = UserCreationForm(request.POST)
+            form = RegisterUserForm(request.POST)
             if form.is_valid():
                 user = form.save(commit=False)
                 user.username = user.username.lower()
@@ -31,7 +27,7 @@ def index(request):
                 login(request, user)
                 return redirect('home')
             else:
-                messages.error(request, 'An error occurred during registration')
+                pass
 
     return render(request, 'base/index.html')
 
