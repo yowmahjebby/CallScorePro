@@ -23257,6 +23257,12 @@ html {
   height: 4.875rem;
 }
 
+.sidenav-footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+
 .sidenav-footer .card.card-background:after {
   opacity: 0.65;
 }
