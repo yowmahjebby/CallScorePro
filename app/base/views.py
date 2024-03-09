@@ -49,4 +49,10 @@ def logoutUser(request):
     logout(request)
     return redirect('/')
 
+def billingPage(request):
+    return render(request, 'base/billing.html')
+
+def callsPage(request):
+    return render(request, 'base/calls.html')
+
 # @allowed_users(allowed_roles=['admin'])
