@@ -17,8 +17,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG')
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ["*"]
+# CSRF_TRUSTED_ORIGINS = ['https://84dc-136-158-1-241.ngrok-free.app']
+# CORS_ORIGIN_WHITELIST = ['https://84dc-136-158-1-241.ngrok-free.app']
 
 # Application definition
 
@@ -126,3 +127,4 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
