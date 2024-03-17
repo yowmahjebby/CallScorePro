@@ -18,8 +18,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG')
 
 ALLOWED_HOSTS = ["*"]
-# CSRF_TRUSTED_ORIGINS = ['https://84dc-136-158-1-241.ngrok-free.app']
-# CORS_ORIGIN_WHITELIST = ['https://84dc-136-158-1-241.ngrok-free.app']
+# CSRF_TRUSTED_ORIGINS = ['https://08bc-136-158-1-241.ngrok-free.app']
+# CORS_ORIGIN_WHITELIST = ['https://08bc-136-158-1-241.ngrok-free.app']
 
 # Application definition
 

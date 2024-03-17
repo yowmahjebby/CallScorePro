@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--   Core JS Files   -->
-    <script src="{% static 'js/core/popper.min.js' %}"></script>
-    <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/base/popper.min.js' %}"></script>
+    <script src="{% static 'js/base/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/plugins/perfect-scrollbar.min.js' %}"></script>
     <script src="{% static 'js/plugins/smooth-scrollbar.min.js' %}"></script>
 
@@ -22,11 +22,11 @@
     <script> src ="{% static 'js/plugins/Chart.extension.js' %}"</script>
 
     <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
-    <script src="{% static 'js/soft-ui-dashboard.js' %}"></script>
-    <script src="{% static 'js/soft-ui-dashboard.min.js' %}"></script>
-    <script src="{% static 'js/soft-ui-dashboard.min.js' %}?v=1.0.7"></script>
+    <script src="{% static 'js/base/soft-ui-dashboard.js' %}"></script>
+    <script src="{% static 'js/base/soft-ui-dashboard.min.js' %}"></script>
+    <script src="{% static 'js/base/soft-ui-dashboard.min.js' %}?v=1.0.7"></script>
 
-    <!--     Fonts and icons     -->
+    <!-- Fonts and icons -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 
     <!-- Nucleo Icons -->
@@ -35,10 +35,9 @@
 
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="{% static 'css/nucleo-svg.css' %}" rel="stylesheet" />
 
     <!-- CSS Files -->
-    <link href="{% static 'css/soft-ui-dashboard.css' %}" rel="stylesheet" type="text/css" media="screen" />
+    <link href="{% static 'css/base/soft-ui-dashboard.css' %}" rel="stylesheet" type="text/css" media="screen" />
 </head>
 
 <body class="g-sidenav-show bg-gray-100">
@@ -262,6 +261,7 @@
                                 {% elif request.path == '/billing/' %}
                                 Billing
                                 {% else %}
+                                Profile
                                 {% endif %}
                             </li>
                         </ol>
